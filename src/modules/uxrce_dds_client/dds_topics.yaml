@@ -80,6 +80,19 @@ publications:
   - topic: /fmu/out/home_position
     type: px4_msgs::msg::HomePosition
 
+  # below here are custom topics I added:
+  - topic: /fmu/out/actuator_outputs
+    type: px4_msgs::msg::ActuatorOutputs
+
+  - topic: /fmu/out/vehicle_rates_setpoint
+    type: px4_msgs::msg::VehicleRatesSetpoint
+
+  - topic: /fmu/out/vehicle_attitude_setpoint
+    type: px4_msgs::msg::VehicleAttitudeSetpoint
+
+  - topic: /fmu/in/airspeed
+    type: px4_msgs::msg::Airspeed
+
 # Create uORB::Publication
 subscriptions:
   - topic: /fmu/in/register_ext_component_request

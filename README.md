@@ -1,3 +1,15 @@
+# DDS Topics modification
+
+- you will need to setup a python venv to use. Also will need the following packages:
+  `python3 -m pip install kconfiglib pyros-genmsg`
+- [edit yaml file here](./src/modules/uxrce_dds_client/dds_topics.yaml)
+- rebuild PX4: `make px4_fmu-v6c_default`
+- Flash to Pixhawk:
+  - Via QGroundControl: Vehicle Setup → Firmware → "Custom firmware file..." → select `.px4` file from `build/px4_fmu-v6c_default/`
+  - Or via USB: `make px4_fmu-v6c_default upload`
+
+
+
 # PX4 Drone Autopilot
 
 [![Releases](https://img.shields.io/github/release/PX4/PX4-Autopilot.svg)](https://github.com/PX4/PX4-Autopilot/releases) [![DOI](https://zenodo.org/badge/22634/PX4/PX4-Autopilot.svg)](https://zenodo.org/badge/latestdoi/22634/PX4/PX4-Autopilot)
