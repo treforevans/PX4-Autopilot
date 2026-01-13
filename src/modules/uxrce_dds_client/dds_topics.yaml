@@ -41,8 +41,8 @@ publications:
   - topic: /fmu/out/timesync_status
     type: px4_msgs::msg::TimesyncStatus
 
-  # - topic: /fmu/out/vehicle_angular_velocity
-  #   type: px4_msgs::msg::VehicleAngularVelocity
+  - topic: /fmu/out/vehicle_angular_velocity
+    type: px4_msgs::msg::VehicleAngularVelocity
 
   - topic: /fmu/out/vehicle_land_detected
     type: px4_msgs::msg::VehicleLandDetected
@@ -80,7 +80,7 @@ publications:
   - topic: /fmu/out/home_position
     type: px4_msgs::msg::HomePosition
 
-  # below here are custom topics I added:
+  # below here are custom publications I added:
   - topic: /fmu/out/actuator_outputs
     type: px4_msgs::msg::ActuatorOutputs
 
@@ -90,8 +90,6 @@ publications:
   - topic: /fmu/out/vehicle_attitude_setpoint
     type: px4_msgs::msg::VehicleAttitudeSetpoint
 
-  - topic: /fmu/in/airspeed
-    type: px4_msgs::msg::Airspeed
 
 # Create uORB::Publication
 subscriptions:
@@ -175,6 +173,10 @@ subscriptions:
 
   - topic: /fmu/in/aux_global_position
     type: px4_msgs::msg::VehicleGlobalPosition
+
+  # below here are custom subscriptions I added:
+  - topic: /fmu/in/airspeed
+    type: px4_msgs::msg::Airspeed
 
 # Create uORB::PublicationMulti
 subscriptions_multi:
