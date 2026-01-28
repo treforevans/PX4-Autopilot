@@ -178,5 +178,9 @@ subscriptions:
   - topic: /fmu/in/airspeed
     type: px4_msgs::msg::Airspeed
 
+services:
+  - service: /fmu/vehicle_command
+    type: px4_msgs::srv::VehicleCommand
+
 # Create uORB::PublicationMulti
 subscriptions_multi:
