@@ -26,8 +26,8 @@ publications:
   - topic: /fmu/out/failsafe_flags
     type: px4_msgs::msg::FailsafeFlags
 
-  - topic: /fmu/out/manual_control_setpoint
-    type: px4_msgs::msg::ManualControlSetpoint
+  # - topic: /fmu/out/manual_control_setpoint
+  #   type: px4_msgs::msg::ManualControlSetpoint
 
   - topic: /fmu/out/message_format_response
     type: px4_msgs::msg::MessageFormatResponse
@@ -35,8 +35,8 @@ publications:
   - topic: /fmu/out/position_setpoint_triplet
     type: px4_msgs::msg::PositionSetpointTriplet
 
-  - topic: /fmu/out/sensor_combined
-    type: px4_msgs::msg::SensorCombined
+  # - topic: /fmu/out/sensor_combined
+  #   type: px4_msgs::msg::SensorCombined
 
   - topic: /fmu/out/timesync_status
     type: px4_msgs::msg::TimesyncStatus
@@ -84,12 +84,17 @@ publications:
   - topic: /fmu/out/actuator_outputs
     type: px4_msgs::msg::ActuatorOutputs
 
-  - topic: /fmu/out/vehicle_rates_setpoint
-    type: px4_msgs::msg::VehicleRatesSetpoint
+  # - topic: /fmu/out/vehicle_rates_setpoint
+  #   type: px4_msgs::msg::VehicleRatesSetpoint
 
-  - topic: /fmu/out/vehicle_attitude_setpoint
-    type: px4_msgs::msg::VehicleAttitudeSetpoint
+  # - topic: /fmu/out/vehicle_attitude_setpoint
+  #   type: px4_msgs::msg::VehicleAttitudeSetpoint
 
+  # - topic: /fmu/out/sensor_mag
+  #   type: px4_msgs::msg::SensorMag
+
+  - topic: /fmu/out/vehicle_magnetometer
+    type: px4_msgs::msg::VehicleMagnetometer
 
 # Create uORB::Publication
 subscriptions:
