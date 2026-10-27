@@ -1,5 +1,12 @@
 # DDS Topics modification
 
+TL;DR:
+```bash
+source ~/.venv/px4/bin/activate
+make px4_fmu-v6c_default
+```
+
+Full setup:
 - you will need to setup a python venv to use.
   `python3 -m venv ~/.venv/px4`
 - `source ~/.venv/px4/bin/activate`
@@ -14,7 +21,6 @@
 - Flash to Pixhawk:
   - Via QGroundControl: Vehicle Setup → Firmware → "Custom firmware file..." → select `.px4` file from `build/px4_fmu-v6c_default/`
   - Or via USB: `make px4_fmu-v6c_default upload`
-
 
 # PX4 Drone Autopilot
 

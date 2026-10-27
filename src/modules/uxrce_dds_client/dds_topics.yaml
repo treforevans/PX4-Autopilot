@@ -7,14 +7,15 @@ publications:
 
   - topic: /fmu/out/register_ext_component_reply
     type: px4_msgs::msg::RegisterExtComponentReply
+    rate_limit: 1.
 
   - topic: /fmu/out/arming_check_request
     type: px4_msgs::msg::ArmingCheckRequest
-    rate_limit: 5.
+    rate_limit: 1.
 
   - topic: /fmu/out/mode_completed
     type: px4_msgs::msg::ModeCompleted
-    rate_limit: 50.
+    rate_limit: 1.
 
   - topic: /fmu/out/battery_status
     type: px4_msgs::msg::BatteryStatus
@@ -22,29 +23,31 @@ publications:
 
   - topic: /fmu/out/collision_constraints
     type: px4_msgs::msg::CollisionConstraints
-    rate_limit: 50.
+    rate_limit: 1.
 
   - topic: /fmu/out/estimator_status_flags
     type: px4_msgs::msg::EstimatorStatusFlags
-    rate_limit: 5.
+    rate_limit: 2.
 
   - topic: /fmu/out/failsafe_flags
     type: px4_msgs::msg::FailsafeFlags
-    rate_limit: 5.
+    rate_limit: 2.
 
   - topic: /fmu/out/manual_control_setpoint
     type: px4_msgs::msg::ManualControlSetpoint
-    rate_limit: 10.
+    rate_limit: 1.
 
   - topic: /fmu/out/message_format_response
     type: px4_msgs::msg::MessageFormatResponse
+    rate_limit: 1.
 
   - topic: /fmu/out/position_setpoint_triplet
     type: px4_msgs::msg::PositionSetpointTriplet
-    rate_limit: 5.
+    rate_limit: 1.
 
-  # - topic: /fmu/out/sensor_combined
-  #   type: px4_msgs::msg::SensorCombined
+  - topic: /fmu/out/sensor_combined
+    type: px4_msgs::msg::SensorCombined
+    rate_limit: 1.
 
   - topic: /fmu/out/timesync_status
     type: px4_msgs::msg::TimesyncStatus
@@ -52,38 +55,40 @@ publications:
 
   - topic: /fmu/out/transponder_report
     type: px4_msgs::msg::TransponderReport
+    rate_limit: 1.
 
   - topic: /fmu/out/vehicle_angular_velocity
     type: px4_msgs::msg::VehicleAngularVelocity
 
   - topic: /fmu/out/vehicle_land_detected
     type: px4_msgs::msg::VehicleLandDetected
-    rate_limit: 5.
+    rate_limit: 1.
 
   - topic: /fmu/out/vehicle_attitude
     type: px4_msgs::msg::VehicleAttitude
 
   - topic: /fmu/out/vehicle_control_mode
     type: px4_msgs::msg::VehicleControlMode
-    rate_limit: 50.
+    rate_limit: 1.
 
   - topic: /fmu/out/vehicle_command_ack
     type: px4_msgs::msg::VehicleCommandAck
 
   - topic: /fmu/out/vehicle_global_position
     type: px4_msgs::msg::VehicleGlobalPosition
-    rate_limit: 50.
+    rate_limit: 1.
 
   - topic: /fmu/out/vehicle_gps_position
     type: px4_msgs::msg::SensorGps
-    rate_limit: 50.
+    rate_limit: 1.
 
   - topic: /fmu/out/vehicle_local_position
     type: px4_msgs::msg::VehicleLocalPosition
-    rate_limit: 50.
+    rate_limit: 10.
 
   - topic: /fmu/out/vehicle_odometry
     type: px4_msgs::msg::VehicleOdometry
+    rate_limit: 10.
 
   - topic: /fmu/out/vehicle_status
     type: px4_msgs::msg::VehicleStatus
@@ -91,14 +96,15 @@ publications:
 
   - topic: /fmu/out/airspeed_validated
     type: px4_msgs::msg::AirspeedValidated
-    rate_limit: 50.
+    rate_limit: 1.
 
   - topic: /fmu/out/vtol_vehicle_status
     type: px4_msgs::msg::VtolVehicleStatus
+    rate_limit: 1.
 
   - topic: /fmu/out/home_position
     type: px4_msgs::msg::HomePosition
-    rate_limit: 5.
+    rate_limit: 1.
 
   - topic: /fmu/out/wind
     type: px4_msgs::msg::Wind
@@ -106,7 +112,7 @@ publications:
 
   - topic: /fmu/out/gimbal_device_attitude_status
     type: px4_msgs::msg::GimbalDeviceAttitudeStatus
-    rate_limit: 20.
+    rate_limit: 1.
 
   # below here are custom publications I added:
   - topic: /fmu/out/actuator_outputs
